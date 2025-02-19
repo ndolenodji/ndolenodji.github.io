@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire d'inscription</title>
+  <link rel="stylesheet" href="connexion.css">
+</head>
+<body>
+  <h2>Formulaire d'inscription</h2>
+  <form id="studentForm">
+    <label for="firstName">Prénom :</label>
+    <input type="text" id="firstName" name="firstName" required>
+    <br><br>
+    
+    <label for="lastName">Nom :</label>
+    <input type="text" id="lastName" name="lastName" required>
+    <br><br>
+    
+    <label for="email">Email :</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+    
+    <label for="phone">Téléphone :</label>
+    <input type="tel" id="phone" name="phone" required>
+    <br><br>
+    
+    <label for="dob">Date de naissance :</label>
+    <input type="date" id="dob" name="dob" required>
+    <br><br>
+    
+    <label for="birthPlace">Lieu de naissance :</label>
+    <input type="text" id="birthPlace" name="birthPlace" required>
+    <br><br>
+    
+    <label for="address">Adresse :</label>
+    <input type="text" id="address" name="address" required>
+    <br><br>
+    
+    <label for="course">Filière :</label>
+    <input type="text" id="course" name="course" required>
+    <br><br>
+    
+    <label for="photo">Photo :</label>
+    <input type="file" id="photo" name="photo" accept="image/*" required>
+    <br><br>
+    
+    <input type="submit" value="Enregistrer">
+  </form>
+
+  <div id="studentInfo" style="display:none;">
+    <h3>Informations de l'étudiant :</h3>
+    <p><strong>Prénom :</strong> <span id="displayFirstName"></span></p>
+    <p><strong>Nom :</strong> <span id="displayLastName"></span></p>
+    <p><strong>Email :</strong> <span id="displayEmail"></span></p>
+    <p><strong>Téléphone :</strong> <span id="displayPhone"></span></p>
+    <p><strong>Date de naissance :</strong> <span id="displayDob"></span></p>
+    <p><strong>Lieu de naissance :</strong> <span id="displayBirthPlace"></span></p>
+    <p><strong>Adresse :</strong> <span id="displayAddress"></span></p>
+    <p><strong>Filière :</strong> <span id="displayCourse"></span></p>
+    <p><strong>Photo :</strong> <img id="displayPhoto" src="" alt="Photo de l'étudiant" style="max-width: 100px;"></p>
+    <button id="editButton">Modifier les informations</button>
+  </div>
+
+  <script src="scriptconnexion.js"></script>
+</body>
+</html>

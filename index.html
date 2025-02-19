@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ma Page Personnelle</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <nav>
+    <a href="#" class="logo">
+      <img src="logo.png" alt="Logo" height="50">
+    </a>
+    <ul>
+      <li><a href="#photo-slider">Galerie Photos</a></li>
+      <li><a href="#video">Vidéo</a></li>
+      <li><a href="#parcours-scolaire">Parcours Scolaire</a></li>
+      <li><a href="connexion.html">Se connecter</a></li>
+    </ul>
+  </nav>
+  <h1>Informations Personnelles</h1>
+  <div class="container">
+    <section class="personnel">
+      <div class="photo">
+        <img src="mathu.jpg" alt="Photo de profil">
+      </div>
+      <div class="informations">
+        
+        <p><strong>Nom :</strong> <b>NDOLENODJI</b></p>
+        <p><strong>Prénom :</strong> <b>MATHURIN</b></p>
+        <p><strong>Email :</strong> <b>ndolenodjimathurin63@gmail.com</b></p>
+        <p><strong>Téléphone :</strong> <b>+235 63 49 60 74</b></p>
+        <p><strong>Date de naissance :</strong> <b>28/08/2003</b></p>
+        <p><strong>Lieu de naissance :</strong> <b>MOUNDOU</b></p>
+        <p><strong>Adresse :</strong> <b>Nguéli, 9e Arr Ndjaména</b></p>
+        <p><strong>Filière :</strong> <b>Développement des Applications Web et Mobile (DAWM)</b></p>
+      </div>
+    </section>
+  </div>
+  
+
+    <section id="photo-slider">
+      <h2>Galerie Photos</h2>
+      <div class="slider">
+        <div class="slides" id="photoSlides">
+          <div class="slide" data-link="photo1.html">
+            <img src="photo1.jpg" alt="Photo 1" class="photo-size">
+            <div class="caption">Description Photo 1</div>
+          </div>
+          <div class="slide" data-link="photo2.html">
+            <img src="photo2.jpg" alt="Photo 2" class="photo-size">
+            <div class="caption">Description Photo 2</div>
+          </div>
+          <!-- Ajoutez les autres photos ici -->
+          <div class="slide" data-link="photo3.html">
+            <img src="photo3.jpg" alt="Photo 3" class="photo-size">
+            <div class="caption">Description Photo 3</div>
+          </div>
+          <div class="slide" data-link="photo4.html">
+            <img src="photo4.jpg" alt="Photo 4" class="photo-size">
+            <div class="caption">Description Photo 4</div>
+          </div>
+          <div class="slide" data-link="photo5.html">
+            <img src="photo5.jpg" alt="Photo 5" class="photo-size">
+            <div class="caption">Description Photo 5</div>
+          </div>
+          <div class="slide" data-link="photo6.html">
+            <img src="photo6.jpg" alt="Photo 6" class="photo-size">
+            <div class="caption">Description Photo 6</div>
+          </div>
+          <div class="slide" data-link="photo7.html">
+            <img src="photo7.jpg" alt="Photo 7" class="photo-size">
+            <div class="caption">Description Photo 7</div>
+          </div>
+          <div class="slide" data-link="photo8.html">
+            <img src="photo8.jpg" alt="Photo 8" class="photo-size">
+            <div class="caption">Description Photo 8</div>
+          </div>
+          <div class="slide" data-link="photo9.html">
+            <img src="photo9.jpg" alt="Photo 9" class="photo-size">
+            <div class="caption">Description Photo 9</div>
+          </div>
+          <div class="slide" data-link="photo10.html">
+            <img src="photo10.jpg" alt="Photo 10" class="photo-size">
+            <div class="caption">Description Photo 10</div>
+          </div>
+        </div>
+        <button class="slider-btn prev-photo" id="prev-photo">Précédent</button>
+        <button class="slider-btn next-photo" id="next-photo">Suivant</button>
+      </div>
+    </section>
+
+    <section class="video" id="video">
+      <h2>Vidéo</h2>
+      <div class="slider">
+        <div class="slide">
+          <video src="tutorielphp.mp4" controls></video>
+        </div>
+        <div class="slide">
+          <iframe src="https://www.youtube.com/embed/ID_DE_LA_VIDEO" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+    
+  <script src="script.js"></script>
+  <section class="parcours-scolaire" id="parcours-scolaire">
+    <h1>Parcours Scolaire</h1>
+    <div class="parcours-links">
+      <a href="primaire.html">Primaire</a>
+      <a href="college.html">Collège</a>
+      <a href="lycee.html">Lycée</a>
+      <a href="universite.html">Université</a>
+    </div>
+
+  </section>
+</div>
+<footer class="footer-bottom">
+  <div class="social-icons">
+    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://x.com/?mx=2" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.bing.com/search?q=google+moteur+de+recherche+fran%C3%A7ais&pc=COS2&ptag=D103124-N0640A4BDDC774D0&form=CONBDF&conlogo=CT3335742" target="_blank"><i class="fab fa-google"></i></a>
+    <a href="https://www.youtube.com/channel/UCNMJ1V9bogk91v_FBgBiQMg" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.bing.com/search?q=copilot&qs=n&form=QBRE&sp=-1&lq=0&pq=copilot&sc=19-7&sk=&cvid=8188A7C8283144579E10A49289789092&ghsh=0&ghacc=0&ghpl=" target="_blank"><i class="fab fa-microsoft"></i></a>
+  </div>
+   <div class="footer-text">
+  <p class="p1">© Réalisé par <span>NDOLENODJI MATHURIN</span>. Tous droits réservés.</p>
+  <p class="p2">Encadré par <span>Mr IBRAHIM ISSA HASSABALLAH</span></p>
+  </div>
+</footer>
+</body>
+</html>

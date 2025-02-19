@@ -1,0 +1,305 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FAAA8D;
+}
+
+/* Réinitialisation des marges et des paddings par défaut */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style de la barre de navigation */
+nav {
+  background-color: #333; /* Couleur de fond sombre */
+  padding: 50px 0; /* Espacement vertical */
+}
+
+/* Style de la liste non ordonnée */
+nav ul {
+  list-style-type: none; /* Suppression des puces */
+  display: flex; /* Utilisation de Flexbox pour l'agencement */
+  justify-content: center; /* Centrage horizontal des éléments */
+  align-items: center; /* Centrage vertical des éléments */
+  gap: 20px; /* Espacement entre les éléments */
+}
+
+/* Style des éléments de la liste */
+nav li {
+  display: inline; /* Affichage en ligne des éléments */
+}
+
+/* Style des liens */
+nav a {
+  text-decoration: none; /* Suppression du soulignement */
+  color: #fff; /* Couleur du texte en blanc */
+  font-size: 16px; /* Taille de police */
+  padding: 8px 15px; /* Espacement interne */
+  border-radius: 5px; /* Bords arrondis */
+  transition: background-color 0.3s ease; /* Transition pour l'effet au survol */
+}
+
+/* Effet au survol des liens */
+nav a:hover {
+  background-color: #575757; /* Changement de couleur de fond au survol */
+}
+.logo img {
+  height: 50px;
+}
+
+.logo {
+    padding: 10;
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #FEEFDD;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(206, 19, 19, 0.1);
+}
+
+section {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #FEEFDD;
+}
+
+.personnel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+
+.informations {
+  flex: 1;
+}
+
+.informations p {
+  margin: 8px 0;
+}
+
+
+
+
+/* Slider commun */
+.slider {
+  position:relative;
+ overflow: scroll;
+  max-width: 500px;
+  margin: 20px auto;
+  background: #1e1c1c4c;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0; /* Élimine les espacements internes */
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  padding: 0; /* Élimine les espacements internes */
+  margin: 0; /* Élimine les marges */
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0; /* Élimine les espacements internes */
+  margin: 0; /* Élimine les marges */
+}
+
+.slide img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px 8px 0 0;
+  margin: 0; /* Élimine les marges */
+  padding: 0; /* Élimine les espacements internes */
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  border-radius: 0 0 8px 8px;
+  margin: 0; /* Élimine les marges */
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 10;
+  margin: 0; /* Élimine les marges */
+}
+
+.slider-btn.prev-photo {
+  left: 15px;
+}
+
+.slider-btn.next-photo {
+  right: 15px;
+}
+
+
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 800px; /* Taille maximale pour la vidéo */
+}
+
+.video h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.video video {
+  width: 100%;
+  max-width: 700px; /* Taille normale pour la vidéo */
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #333;
+}
+
+
+/* Styles pour la section "Parcours" */
+.parcours-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #eee;
+}
+/* Styles pour the links */
+.parcours-links {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.parcours-links a {
+  text-decoration: none;
+  color: #007bff;
+  padding: 8px 12px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.parcours-links a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Style général du pied de page */
+.footer-bottom {
+  background-color: #333; /* Couleur de fond sombre, classique pour un footer */
+  color: #fff; /* Texte en blanc pour une bonne lisibilité */
+  padding: 20px 0; /* Espace au-dessus et en-dessous du contenu */
+  text-align: center; /* Centre le contenu horizontalement */
+  font-size: 14px; /* Taille de police raisonnable */
+}
+
+.social-icons {
+  margin-bottom: 15px; /* Espace entre les icônes sociales et le texte du footer */
+}
+
+.social-icons a {
+  display: inline-block; /* Permet de contrôler la taille et la marge des liens */
+  width: 40px; /* Largeur des icônes */
+  height: 40px; /* Hauteur des icônes */
+  line-height: 40px; /* Centre verticalement l'icône dans le cercle */
+  border-radius: 50%; /* Forme un cercle autour de l'icône */
+  background-color: #555; /* Couleur de fond des cercles */
+  color: #fff; /* Couleur des icônes */
+  margin: 0 8px; /* Espace entre les icônes */
+  text-align: center; /* Centre l'icône horizontalement */
+  font-size: 18px; /* Taille des icônes */
+  transition: background-color 0.3s ease; /* Animation douce au survol */
+}
+
+.social-icons a:hover {
+  background-color: #eee; /* Couleur de fond plus claire au survol */
+  color: #333; /* Change la couleur de l'icône au survol */
+}
+
+.footer-text {
+  font-size: 12px;
+  color: #ccc; /* Légèrement plus clair pour un contraste subtil */
+}
+
+.footer-text p {
+  margin: 5px 0; /* Espacement entre les paragraphes */
+}
+
+.footer-text span {
+  font-weight: bold; /* Met en évidence le nom */
+  color: #fff; /* Remet le nom en blanc pour plus de contraste */
+}
+
+
+/* Optionnel: Pour une mise en page plus sophistiquée, utilisez Flexbox */
+/*  Commentez ou supprimez si vous préférez la mise en page centrée simple */
+/*
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Aligne verticalement si besoin */
+
+
+@media (min-width: 768px) { /* Pour les écrans plus larges */
+  .footer-bottom {
+    flex-direction: row; /* Alignement horizontal sur les grands écrans */
+    justify-content: space-between; /* Répartit l'espace entre les icônes et le texte */
+    padding: 20px 30px; /* Ajoute du padding sur les côtés */
+  }
+
+  .social-icons {
+    margin-bottom: 0; /* Supprime la marge pour l'alignement horizontal */
+  }
+
+  .footer-text .p1 {
+    text-align: left;
+    /* Aligne le texte à droite sur les grands écrans */
+  }}
+  .footer-text .p2{
+    text-align:right;
+    
+  }

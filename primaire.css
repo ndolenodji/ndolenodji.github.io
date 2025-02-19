@@ -1,0 +1,72 @@
+/* Styles généraux pour le corps de la page */
+/* Réinitialisation des marges et des paddings par défaut */
+body, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style pour le header */
+  header {
+    background-color: #333; /* Couleur de fond du header */
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Style pour la barre de navigation */
+  nav ul {
+    list-style-type: none; /* Supprime les puces des listes */
+    display: flex; /* Affiche les éléments en ligne */
+    justify-content: center; /* Centre les éléments horizontalement */
+    background-color: #444; /* Couleur de fond de la barre de navigation */
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Style pour les éléments de la liste */
+  nav ul li {
+    margin: 0;
+  }
+  
+  /* Style pour les liens de navigation */
+  nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: background-color 0.3s; /* Transition pour l'effet au survol */
+  }
+  
+  /* Effet au survol des liens */
+  nav ul li a:hover {
+    background-color: #555; /* Couleur de fond au survol */
+  }
+  
+  /* Styles spécifiques pour le pied de page */
+  footer {
+    background-color: #333; /* Couleur de fond du pied de page */
+    color: #fff; /* Couleur du texte du pied de page */
+    text-align: center; /* Centre le texte horizontalement */
+    padding: 20px 10px; /* Espacement interne du pied de page */
+  }
+  
+  footer ul {
+    list-style-type: none; /* Supprime les puces des listes */
+    padding: 0;
+    margin: 10px 0; /* Espacement autour de la liste */
+  }
+  
+  footer ul li {
+    display: inline; /* Affiche les éléments de liste en ligne */
+    margin: 0 10px; /* Espacement entre les liens */
+  }
+  
+  footer ul li a {
+    color: #fff; /* Couleur des liens */
+    text-decoration: none; /* Supprime le soulignement des liens */
+  }
+  
+  footer ul li a:hover {
+    text-decoration: underline; /* Souligne les liens au survol */
+  }
+  
